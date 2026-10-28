@@ -1,0 +1,196 @@
+{
+  "business_case": {
+    "alternatives": {
+      "comparison_months": 12,
+      "options": [
+        {
+          "features": [
+            "sync invoices"
+          ],
+          "name": "manual re-entry",
+          "price_period": "monthly",
+          "price_usd": 0,
+          "switching_cost_usd": 0
+        },
+        {
+          "features": [
+            "sync invoices",
+            "auto reminders"
+          ],
+          "name": "RivalPro",
+          "price_period": "monthly",
+          "price_usd": 99,
+          "switching_cost_usd": 0
+        },
+        {
+          "features": [
+            "sync invoices",
+            "auto reminders"
+          ],
+          "name": "FreeSync app",
+          "price_period": "monthly",
+          "price_usd": 0,
+          "switching_cost_usd": 100
+        }
+      ],
+      "refs": [
+        0
+      ],
+      "required_features": [
+        "sync invoices",
+        "auto reminders"
+      ]
+    },
+    "buyer": {
+      "budget_period": "monthly",
+      "budget_usd": 100,
+      "price_period": "monthly",
+      "price_usd": 49,
+      "purchase_process": "owner pays by card",
+      "refs": [
+        1
+      ],
+      "role": "shop owner"
+    },
+    "delivery": {
+      "available_resources": [
+        "api_access",
+        "reminder_template",
+        "python"
+      ],
+      "cost_period": "monthly",
+      "days_available": 7,
+      "days_needed": 5,
+      "refs": [
+        0
+      ],
+      "required_resources": [
+        "api_access",
+        "reminder_template"
+      ],
+      "unit_cost_usd": 10
+    },
+    "intervention": {
+      "changes_steps": [
+        "manual_rekey",
+        "missed_followup"
+      ],
+      "mechanism": "Sync replaces re-keying; automatic reminders replace manual follow-up",
+      "refs": [
+        1
+      ]
+    },
+    "platform": {
+      "requirements": [
+        {
+          "capability": "read invoices via official API",
+          "owner": "vendor",
+          "permission": "granted",
+          "refs": [
+            0
+          ]
+        }
+      ]
+    },
+    "root_cause": {
+      "causal_steps": [
+        "manual_rekey",
+        "missed_followup"
+      ],
+      "failure_paths": [
+        [
+          "manual_rekey",
+          "late_invoice"
+        ],
+        [
+          "missed_followup",
+          "late_invoice"
+        ]
+      ],
+      "mechanism": "Invoices are re-keyed by hand between shop system and accounting, and follow-ups are forgotten",
+      "refs": [
+        1
+      ]
+    },
+    "validation": {
+      "hypothesis": "At least 3 of 10 contacted owners accept a $49/mo pilot",
+      "kill": "<=1 of 10 accept",
+      "method": "offline test design only",
+      "success": ">=3 of 10 accept"
+    }
+  },
+  "case_id": "T14_substitute_dominates",
+  "evidence": [
+    {
+      "claim_status": "fact",
+      "independent_actor": null,
+      "observation": "Vendor docs: official invoices API, read scope for account owners; RivalPro lists $99/mo.",
+      "retrieved_at": "2026-10-27",
+      "source_class": "vendor",
+      "source_date": "2026-10-01",
+      "source_id": "doc-1",
+      "source_platform": "examplevendor",
+      "supports": [
+        "platform_control",
+        "alternatives",
+        "feasibility"
+      ],
+      "type": "documentation",
+      "url": "https://www.examplevendor.com/docs/invoices-api"
+    },
+    {
+      "claim_status": "fact",
+      "independent_actor": "u/owner_a",
+      "observation": "Owner says they re-key every invoice by hand each week.",
+      "retrieved_at": "2026-10-27",
+      "source_class": "reddit",
+      "source_date": "2026-10-01",
+      "source_id": "aaa111",
+      "source_platform": "reddit",
+      "supports": [
+        "customer_behavior",
+        "root_cause",
+        "intervention",
+        "buyer"
+      ],
+      "type": "customer_behavior",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/aaa111/rekeying/"
+    },
+    {
+      "claim_status": "fact",
+      "independent_actor": "u/owner_b",
+      "observation": "Owner says they re-key every invoice by hand each week.",
+      "retrieved_at": "2026-10-27",
+      "source_class": "reddit",
+      "source_date": "2026-10-01",
+      "source_id": "bbb222",
+      "source_platform": "reddit",
+      "supports": [
+        "customer_behavior",
+        "root_cause",
+        "intervention",
+        "buyer"
+      ],
+      "type": "customer_behavior",
+      "url": "https://www.reddit.com/r/Bookkeeping/comments/bbb222/invoices/"
+    },
+    {
+      "claim_status": "fact",
+      "independent_actor": "Maria K.",
+      "observation": "Owner says they re-key every invoice by hand each week.",
+      "retrieved_at": "2026-10-27",
+      "source_class": "app_review",
+      "source_date": "2026-10-01",
+      "source_id": "gp333",
+      "source_platform": "google_play",
+      "supports": [
+        "customer_behavior",
+        "root_cause",
+        "intervention",
+        "buyer"
+      ],
+      "type": "customer_behavior",
+      "url": "https://play.google.com/store/apps/details?id=com.example.invoice&reviewId=gp333"
+    }
+  ]
+}

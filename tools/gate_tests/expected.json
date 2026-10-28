@@ -1,0 +1,21 @@
+{
+ "_rule": "verdict must match exactly; fatal = exact set of dimensions with a fatal finding; unknown_includes = dimensions that must have an unknown finding (subset); accounts/platforms = customer_evidence_audit counts when given",
+ "T01_travel_appeals":            {"verdict": "REJECT",      "fatal": ["platform_control"]},
+ "T02_motorcycle_desk":           {"verdict": "INVESTIGATE", "fatal": [], "unknown_includes": ["customer_evidence", "buyer", "alternatives", "feasibility"], "accounts": 2, "platforms": 1},
+ "T03_two_accounts_one_platform": {"verdict": "INVESTIGATE", "fatal": [], "unknown_includes": ["customer_evidence"], "accounts": 2, "platforms": 1},
+ "T04_no_margin":                 {"verdict": "REJECT",      "fatal": ["feasibility"]},
+ "T05_clean":                     {"verdict": "TEST_DESIGN", "fatal": [], "accounts": 3, "platforms": 2},
+ "T06_same_actor_twice":          {"verdict": "INVESTIGATE", "fatal": [], "unknown_includes": ["customer_evidence"], "accounts": 2, "platforms": 1},
+ "T07_vendor_source_not_customer":{"verdict": "INVESTIGATE", "fatal": [], "unknown_includes": ["customer_evidence"], "accounts": 2, "platforms": 1},
+ "T08_utm_duplicate":             {"verdict": "INVESTIGATE", "fatal": [], "unknown_includes": ["customer_evidence"], "accounts": 2, "platforms": 1},
+ "T09_budget_null_unknown":       {"verdict": "INVESTIGATE", "fatal": [], "unknown_includes": ["buyer"]},
+ "T10_budget_zero_is_a_fact":     {"verdict": "REJECT",      "fatal": ["buyer"]},
+ "T11_denied_owner_user_fatal":   {"verdict": "REJECT",      "fatal": ["platform_control"]},
+ "T12_generator_labels_ignored":  {"verdict": "INVESTIGATE", "fatal": [], "unknown_includes": ["customer_evidence"], "accounts": 2, "platforms": 1},
+ "T13_inference_only":            {"verdict": "INVESTIGATE", "fatal": [], "unknown_includes": ["root_cause", "platform_control", "buyer", "alternatives", "feasibility", "customer_evidence"], "accounts": 0, "platforms": 0},
+ "T14_substitute_dominates":      {"verdict": "REJECT",      "fatal": ["alternatives"]},
+ "T15_paying_rivals_not_a_kill":  {"verdict": "TEST_DESIGN", "fatal": []},
+ "T16_downstream_only_fix":       {"verdict": "REJECT",      "fatal": ["root_cause"]},
+ "T17_one_path_unaddressed":      {"verdict": "INVESTIGATE", "fatal": [], "unknown_includes": ["root_cause"]},
+ "T18_days_exceed_capacity":      {"verdict": "REJECT",      "fatal": ["feasibility"]}
+}

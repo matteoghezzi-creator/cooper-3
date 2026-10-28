@@ -1,0 +1,262 @@
+{
+  "case_id": "BLIND-02",
+  "evidence": [
+    {
+      "url": "https://www.thetruckersreport.com/truckingindustryforum/threads/dealing-with-broker-on-detention.1838609/",
+      "observation": "Small carrier owner (runs drivers; 'Dispatch was literally begging receivers') says a 2-drop load was unloaded 24 hours late, they politely asked the broker for detention/layover 'and nothing happens'; asks for tactics. Page opened 2026-10-27.",
+      "independent_actor": "pavrom",
+      "source_id": "1838609#post-1",
+      "source_platform": "thetruckersreport",
+      "source_class": "forum",
+      "source_date": "2020-03-19",
+      "retrieved_at": "2026-10-27",
+      "type": "customer_behavior",
+      "claim_status": "fact",
+      "supports": [
+        "customer_behavior",
+        "root_cause"
+      ]
+    },
+    {
+      "url": "https://www.thetruckersreport.com/truckingindustryforum/threads/dealing-with-broker-on-detention.1838609/",
+      "observation": "Owner-operator: brokers look for excuses not to pay; he emails notice as proof, but even after billing detention with BOL in/out times a large broker paid linehaul only, so he had to call their billing department and wait on hold 'too long for a normal guy'; another broker paid only after a lengthy email. Page opened 2026-10-27.",
+      "independent_actor": "TallJoe",
+      "source_id": "1838609#post-9",
+      "source_platform": "thetruckersreport",
+      "source_class": "forum",
+      "source_date": "2020-03-19",
+      "retrieved_at": "2026-10-27",
+      "type": "customer_behavior",
+      "claim_status": "fact",
+      "supports": [
+        "customer_behavior",
+        "root_cause"
+      ]
+    },
+    {
+      "url": "https://www.expeditersonline.com/forums/threads/detention-time-what-do-you-get.47012/",
+      "observation": "Expedite team contractor leased to a carrier: detention is inconsistent, sometimes paid and sometimes not; a 12+ hour border delay caused by a broker paperwork error paid only a $25 bump; 'we do not know until the run is complete if D-time will be paid at all'. Leased contractor, not an own-authority carrier. Page opened 2026-10-27.",
+      "independent_actor": "ATeam",
+      "source_id": "47012#ATeam-reply-1",
+      "source_platform": "expeditersonline",
+      "source_class": "forum",
+      "source_date": "2011-04-01",
+      "retrieved_at": "2026-10-27",
+      "type": "customer_behavior",
+      "claim_status": "fact",
+      "supports": [
+        "customer_behavior"
+      ]
+    },
+    {
+      "url": "https://www.thetruckersreport.com/truckingindustryforum/threads/dealing-with-broker-on-detention.1838609/",
+      "observation": "Same carrier owner adds they usually have smooth operations and are just trying to recover something to compensate the driver. Page opened 2026-10-27.",
+      "independent_actor": "pavrom",
+      "source_id": "1838609#post-3",
+      "source_platform": "thetruckersreport",
+      "source_class": "forum",
+      "source_date": "2020-03-19",
+      "retrieved_at": "2026-10-27",
+      "type": "customer_behavior",
+      "claim_status": "fact",
+      "supports": [
+        "customer_behavior"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/OwnerOperators/comments/1q80l7q/detention_pay/",
+      "observation": "SNIPPET (search excerpt only, page not opened per project rule): commenter claims most owner-operators he knows 'would pay low double digits' for something that got detention unstuck; second-hand willingness-to-pay claim. Comment id not visible.",
+      "independent_actor": "u/LogisticsOps",
+      "source_id": "1q80l7q:LogisticsOps",
+      "source_platform": "reddit",
+      "source_class": "reddit",
+      "source_date": "2026-01-12",
+      "retrieved_at": "2026-10-27",
+      "type": "customer_behavior",
+      "claim_status": "inference",
+      "supports": [
+        "customer_behavior",
+        "buyer"
+      ]
+    },
+    {
+      "url": "https://torqueloads.com/load-dispatch/dispatch-rates",
+      "observation": "Dispatch service page: 5% of gross for one truck (4% fleets, 7% new MC); included in the percentage: 'Detention and layover claims, chased until they're paid or closed out'; dispatcher also books loads and runs broker calls; example week $6,000 gross -> $300 fee. Rate con still goes to and is signed by the carrier. Page opened 2026-10-27; undated.",
+      "independent_actor": null,
+      "source_id": "torqueloads-dispatch-rates",
+      "source_platform": "torqueloads.com",
+      "source_class": "vendor",
+      "source_date": null,
+      "retrieved_at": "2026-10-27",
+      "type": "pricing",
+      "claim_status": "fact",
+      "supports": [
+        "intervention",
+        "platform_control",
+        "alternatives"
+      ]
+    },
+    {
+      "url": "https://truckleap.com/blog/dispatch-contract-clauses-to-negotiate",
+      "observation": "Dispatch contract guide: 'A 7 percent fee on $300 of detention pay is $21. Across 10 loads with detention per month, that is $210/month' that carriers pay dispatchers on detention alone. Worked example by the publisher (ESTIMATE basis for budget), not a survey. Page opened 2026-10-27.",
+      "independent_actor": null,
+      "source_id": "truckleap-dispatch-contract-clauses",
+      "source_platform": "truckleap.com",
+      "source_class": "vendor",
+      "source_date": "2026-04-29",
+      "retrieved_at": "2026-10-27",
+      "type": "pricing",
+      "claim_status": "fact",
+      "supports": [
+        "buyer"
+      ]
+    },
+    {
+      "url": "https://truckdispatchexperts.com/resources/detention-time-not-paid/",
+      "observation": "Dispatch firm guide: collection process is a separate detention invoice with rate con, arrival/departure photos, ELD records and amount, submitted within 48 hours, followed up at 7 and 14 days; says solo operators booking few loads with a broker 'often get ghosted'. Page opened 2026-10-27.",
+      "independent_actor": null,
+      "source_id": "tde-detention-time-not-paid",
+      "source_platform": "truckdispatchexperts.com",
+      "source_class": "vendor",
+      "source_date": "2026-03-09",
+      "retrieved_at": "2026-10-27",
+      "type": "documentation",
+      "claim_status": "fact",
+      "supports": [
+        "intervention",
+        "feasibility"
+      ]
+    }
+  ],
+  "business_case": {
+    "root_cause": {
+      "mechanism": "Self-dispatched small carriers already capture times and notice, but detention claims die afterwards: the claim is not submitted promptly with matching documents, and nobody chases broker accounts payable, so the broker pays linehaul only.",
+      "causal_steps": [
+        "claim_not_submitted_promptly",
+        "no_ap_follow_up"
+      ],
+      "failure_paths": [
+        [
+          "claim_not_submitted_promptly",
+          "claim_ignored",
+          "detention_unpaid"
+        ],
+        [
+          "no_ap_follow_up",
+          "claim_short_paid",
+          "detention_unpaid"
+        ]
+      ],
+      "refs": [
+        0,
+        1
+      ]
+    },
+    "intervention": {
+      "mechanism": "Back-office detention desk: the carrier forwards the rate con, BOL and ELD timestamps after delivery; the desk sends the detention invoice within 48 hours and follows up with broker AP in writing at 7 and 14 days until paid or formally denied. The carrier keeps booking its own loads.",
+      "changes_steps": [
+        "claim_not_submitted_promptly",
+        "no_ap_follow_up"
+      ],
+      "refs": [
+        5,
+        7
+      ]
+    },
+    "platform": {
+      "requirements": [
+        {
+          "capability": "receive rate cons, BOLs and ELD timestamps forwarded by the carrier",
+          "owner": "user",
+          "permission": "granted",
+          "refs": [
+            5
+          ]
+        },
+        {
+          "capability": "submit detention invoices and follow up with broker AP on the carrier's behalf",
+          "owner": "third_party",
+          "permission": "granted",
+          "refs": [
+            5
+          ]
+        }
+      ]
+    },
+    "buyer": {
+      "role": "owner of a 1-3 truck carrier with own authority who self-dispatches",
+      "purchase_process": "owner pays a monthly card subscription; no other approver",
+      "price_usd": 99,
+      "price_period": "monthly",
+      "budget_usd": 210,
+      "budget_period": "monthly",
+      "refs": [
+        6
+      ]
+    },
+    "alternatives": {
+      "required_features": [
+        "claim filed within 48 hours of delivery",
+        "ap follow-up at 7 and 14 days",
+        "follow-up done without owner or driver time",
+        "carrier keeps booking its own loads"
+      ],
+      "comparison_months": 12,
+      "options": [
+        {
+          "name": "Owner chases claims manually (ELD + email + phone)",
+          "features": [
+            "claim filed within 48 hours of delivery",
+            "ap follow-up at 7 and 14 days",
+            "carrier keeps booking its own loads"
+          ],
+          "price_usd": 0,
+          "price_period": "monthly",
+          "switching_cost_usd": 0
+        },
+        {
+          "name": "Full-service dispatcher at 5% of gross (e.g. TorqueLoads)",
+          "features": [
+            "claim filed within 48 hours of delivery",
+            "ap follow-up at 7 and 14 days",
+            "follow-up done without owner or driver time"
+          ],
+          "price_usd": 1300,
+          "price_period": "monthly",
+          "switching_cost_usd": 0
+        }
+      ],
+      "refs": [
+        5
+      ]
+    },
+    "delivery": {
+      "required_resources": [
+        "shared_claims_inbox",
+        "detention_invoice_template",
+        "broker_ap_contact_list",
+        "claim_tracking_sheet"
+      ],
+      "available_resources": [
+        "shared_claims_inbox",
+        "detention_invoice_template",
+        "broker_ap_contact_list",
+        "claim_tracking_sheet",
+        "part_time_va"
+      ],
+      "days_needed": 5,
+      "days_available": 14,
+      "unit_cost_usd": 35,
+      "cost_period": "monthly",
+      "refs": [
+        7
+      ]
+    },
+    "validation": {
+      "hypothesis": "Self-dispatched 1-3 truck carriers will pay a refundable $49 deposit to hand off detention follow-up.",
+      "method": "One offer page plus written forum posts and emails to carriers (copy approved and sent by Matteo); no calls; count paid refundable deposits only.",
+      "success": ">= 3 paid refundable $49 deposits from distinct carriers within 14 days",
+      "kill": "<= 1 paid deposit within 14 days, or depositors forward 0 claims within 30 days"
+    }
+  }
+}

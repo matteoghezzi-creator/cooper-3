@@ -1,0 +1,252 @@
+{
+  "case_id": "BLIND-01",
+  "evidence": [
+    {
+      "url": "https://www.thetruckersreport.com/truckingindustryforum/threads/how-do-you-handle-detention-as-an-owner-operator.2055637/",
+      "observation": "Thread starter (owner-operator, no big-carrier backing) asks how to secure detention; says customers scribble on the BOL and he is considering his own trailer control sheet requiring signed in/out time and date. Page opened 2026-10-27.",
+      "independent_actor": "SoulScream84",
+      "source_id": "2055637#post-1",
+      "source_platform": "thetruckersreport",
+      "source_class": "forum",
+      "source_date": "2021-01-18",
+      "retrieved_at": "2026-10-27",
+      "type": "customer_behavior",
+      "claim_status": "fact",
+      "supports": [
+        "customer_behavior",
+        "root_cause"
+      ]
+    },
+    {
+      "url": "https://www.thetruckersreport.com/truckingindustryforum/threads/how-do-you-handle-detention-as-an-owner-operator.2055637/",
+      "observation": "Owner-operator advises: call the broker one hour before detention starts and keep in-and-out times on the BOL or have the facility write them in; drop brokers that don't pay. Page opened 2026-10-27.",
+      "independent_actor": "Dino soar",
+      "source_id": "2055637#post-4",
+      "source_platform": "thetruckersreport",
+      "source_class": "forum",
+      "source_date": "2021-01-18",
+      "retrieved_at": "2026-10-27",
+      "type": "customer_behavior",
+      "claim_status": "fact",
+      "supports": [
+        "customer_behavior",
+        "alternatives"
+      ]
+    },
+    {
+      "url": "https://www.thetruckersreport.com/truckingindustryforum/threads/how-do-you-handle-detention-as-an-owner-operator.2055637/",
+      "observation": "Owner-operator: agree detention terms on the rate confirmation, get in and out times with signatures AND initials, call and send an email when detention approaches; 'if its not in writing it does not exist'; most detention caps are $250. Page opened 2026-10-27.",
+      "independent_actor": "bad-luck",
+      "source_id": "2055637#post-8",
+      "source_platform": "thetruckersreport",
+      "source_class": "forum",
+      "source_date": "2021-01-18",
+      "retrieved_at": "2026-10-27",
+      "type": "customer_behavior",
+      "claim_status": "fact",
+      "supports": [
+        "customer_behavior",
+        "alternatives",
+        "root_cause"
+      ]
+    },
+    {
+      "url": "https://www.thetruckersreport.com/truckingindustryforum/threads/how-do-you-handle-detention-as-an-owner-operator.2055637/",
+      "observation": "Same thread starter replies that he wants to book loads further ahead and that low detention pay is not yet a major issue for him. Page opened 2026-10-27.",
+      "independent_actor": "SoulScream84",
+      "source_id": "2055637#post-5",
+      "source_platform": "thetruckersreport",
+      "source_class": "forum",
+      "source_date": "2021-01-18",
+      "retrieved_at": "2026-10-27",
+      "type": "customer_behavior",
+      "claim_status": "fact",
+      "supports": [
+        "customer_behavior"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/OwnerOperators/comments/1q80l7q/detention_pay/",
+      "observation": "SNIPPET (seen only in a site:reddit.com search excerpt, page not opened per project rule): commenter says detention must be billable before payable; notify broker at end of grace period, times on BOL, 'No app is needed here', use ELD timestamps to back claims. Comment id not visible; source_id is post id + username.",
+      "independent_actor": "u/ClerkAvailable9947",
+      "source_id": "1q80l7q:ClerkAvailable9947",
+      "source_platform": "reddit",
+      "source_class": "reddit",
+      "source_date": "2026-01-11",
+      "retrieved_at": "2026-10-27",
+      "type": "customer_behavior",
+      "claim_status": "inference",
+      "supports": [
+        "customer_behavior",
+        "alternatives"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/OwnerOperators/comments/1q80l7q/detention_pay/",
+      "observation": "SNIPPET (search excerpt only): commenter says detention dies at follow-up and claims 'most owner ops I know would pay low double digits' for something that got a few hundred dollars a month unstuck. Second-hand claim about others' willingness to pay. Comment id not visible.",
+      "independent_actor": "u/LogisticsOps",
+      "source_id": "1q80l7q:LogisticsOps",
+      "source_platform": "reddit",
+      "source_class": "reddit",
+      "source_date": "2026-01-12",
+      "retrieved_at": "2026-10-27",
+      "type": "customer_behavior",
+      "claim_status": "inference",
+      "supports": [
+        "customer_behavior",
+        "buyer"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/OwnerOperators/comments/1vmew5w/what_actually_gets_a_detention_claim_paid/",
+      "observation": "SNIPPET (search excerpt only): commenter (lists an MC number) says what gets detention paid is written notice the minute free time ends plus arrival/departure on the BOL or a signed in-out sheet. Comment id not visible.",
+      "independent_actor": "u/DWwitts",
+      "source_id": "1vmew5w:DWwitts",
+      "source_platform": "reddit",
+      "source_class": "reddit",
+      "source_date": "2026-08-12",
+      "retrieved_at": "2026-10-27",
+      "type": "customer_behavior",
+      "claim_status": "inference",
+      "supports": [
+        "customer_behavior",
+        "root_cause"
+      ]
+    },
+    {
+      "url": "https://developer.android.com/develop/sensors-and-location/location/geofencing",
+      "observation": "Android developer docs: apps can register geofences (lat/long + radius, up to 100 per app) and receive ENTER/EXIT/DWELL transition events; requires ACCESS_FINE_LOCATION and ACCESS_BACKGROUND_LOCATION; alert latency usually < 2 minutes, up to ~6 when stationary. Page opened 2026-10-27, last updated 2026-10-23.",
+      "independent_actor": null,
+      "source_id": "android-geofencing-guide",
+      "source_platform": "developer.android.com",
+      "source_class": "docs",
+      "source_date": "2026-10-23",
+      "retrieved_at": "2026-10-27",
+      "type": "documentation",
+      "claim_status": "fact",
+      "supports": [
+        "intervention",
+        "platform_control",
+        "feasibility"
+      ]
+    }
+  ],
+  "business_case": {
+    "root_cause": {
+      "mechanism": "Owner-operators lose detention pay because the paper trail is incomplete: in/out times are not recorded or signed, and the broker is not notified in writing before free time ends, so the claim is disputed.",
+      "causal_steps": [
+        "in_out_times_not_recorded",
+        "no_written_notice_before_free_time"
+      ],
+      "failure_paths": [
+        [
+          "in_out_times_not_recorded",
+          "claim_disputed",
+          "detention_unpaid"
+        ],
+        [
+          "no_written_notice_before_free_time",
+          "claim_disputed",
+          "detention_unpaid"
+        ]
+      ],
+      "refs": [
+        0,
+        2
+      ]
+    },
+    "intervention": {
+      "mechanism": "Android app geofences each facility on the rate con, logs arrival/departure automatically, sends a templated written notice to the broker when free time expires, and builds a detention invoice PDF with the timestamps.",
+      "changes_steps": [
+        "in_out_times_not_recorded",
+        "no_written_notice_before_free_time"
+      ],
+      "refs": [
+        7
+      ]
+    },
+    "platform": {
+      "requirements": [
+        {
+          "capability": "detect facility arrival and departure through device geofence enter/exit events",
+          "owner": "vendor",
+          "permission": "granted",
+          "refs": [
+            7
+          ]
+        }
+      ]
+    },
+    "buyer": {
+      "role": "owner-operator with own authority (1 truck)",
+      "purchase_process": "owner subscribes in-app and pays by card; no other approver",
+      "price_usd": 19,
+      "price_period": "monthly",
+      "budget_usd": 30,
+      "budget_period": "monthly",
+      "refs": [
+        5
+      ]
+    },
+    "alternatives": {
+      "required_features": [
+        "timestamped arrival and departure record",
+        "written broker notice before free time ends",
+        "detention invoice with matching documents"
+      ],
+      "comparison_months": 12,
+      "options": [
+        {
+          "name": "Manual: existing ELD timestamps + signed BOL in/out times + email to broker",
+          "features": [
+            "timestamped arrival and departure record",
+            "written broker notice before free time ends",
+            "detention invoice with matching documents"
+          ],
+          "price_usd": 0,
+          "price_period": "monthly",
+          "switching_cost_usd": 0
+        },
+        {
+          "name": "Broker-side tracking apps (Trucker Tools / MacroPoint)",
+          "features": [
+            "timestamped arrival and departure record"
+          ],
+          "price_usd": null,
+          "price_period": "monthly",
+          "switching_cost_usd": null
+        }
+      ],
+      "refs": [
+        1,
+        2
+      ]
+    },
+    "delivery": {
+      "required_resources": [
+        "android_developer",
+        "geofencing_api",
+        "pdf_invoice_template"
+      ],
+      "available_resources": [
+        "android_developer",
+        "geofencing_api",
+        "pdf_invoice_template",
+        "email_sending"
+      ],
+      "days_needed": 21,
+      "days_available": 30,
+      "unit_cost_usd": 1.5,
+      "cost_period": "monthly",
+      "refs": [
+        7
+      ]
+    },
+    "validation": {
+      "hypothesis": "At least 5% of owner-operators who open the offer page start a paid $19/month subscription.",
+      "method": "Offer page plus written posts in owner-operator forums (copy approved by Matteo); count paid starts only.",
+      "success": ">= 5 paid subscriptions from <= 100 unique offer-page visitors within 14 days",
+      "kill": "<= 1 paid subscription after 100 unique visitors or 14 days, whichever comes first"
+    }
+  }
+}

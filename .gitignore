@@ -1,0 +1,14 @@
+# Never commit secrets or data
+.env*
+*.pem
+*.key
+*.gpg
+*.sqlite*
+*.db
+*.dump
+*.sql
+*.tgz
+*.zip
+secrets/
+backups/
+__pycache__/
